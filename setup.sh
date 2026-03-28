@@ -163,7 +163,7 @@ cask "font-fira-code-nerd-font"
 BREWFILE_CONTENT
 
 info "Brewfile로 설치 시작 (시간이 좀 걸립니다)..."
-brew bundle --file="$BREWFILE" --no-lock || warn "일부 패키지 설치 실패 — 로그를 확인하세요"
+brew bundle --file="$BREWFILE" || warn "일부 패키지 설치 실패 — 로그를 확인하세요"
 rm -f "$BREWFILE"
 success "Homebrew 패키지 설치 완료"
 

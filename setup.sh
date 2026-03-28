@@ -141,7 +141,7 @@ brew "doggo"         # DNS lookup
 cask "ghostty"
 cask "antigravity"
 cask "zed"
-cask "docker"        # Docker Desktop
+cask "docker-desktop"  # Docker Desktop
 cask "raycast"
 cask "google-chrome"
 cask "slack"

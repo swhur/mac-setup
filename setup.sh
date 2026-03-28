@@ -228,16 +228,53 @@ if status is-interactive
     alias grep "rg"
     alias find "fd"
     alias vim "nvim"
-    alias k "kubectl"
-    alias kx "kubectx"
-    alias kn "kubens"
-    alias lg "lazygit"
-    alias dc "docker compose"
+    # ── Git ──
     alias g "git"
     alias gs "git status"
     alias gd "git diff"
     alias gl "git log --oneline --graph --decorate -20"
     alias gp "git push"
+    alias ga "git add"
+    alias gaa "git add -A"
+    alias gap "git add -p"
+    alias gc "git commit -m"
+    alias gca "git commit --amend"
+    alias gco "git checkout"
+    alias gcb "git checkout -b"
+    alias gsw "git switch"
+    alias gm "git merge"
+    alias grb "git rebase -i"
+
+    # ── GitHub CLI ──
+    alias gpr "gh pr create"
+    alias gprl "gh pr list"
+    alias gpro "gh pr checkout"
+    alias gis "gh issue list"
+    alias gic "gh issue create"
+    alias grc "gh repo clone"
+    alias grv "gh repo view --web"
+    alias gw "gh workflow list"
+    alias gwr "gh workflow run"
+
+    # ── Kubernetes ──
+    alias k "kubectl"
+    alias kx "kubectx"
+    alias kn "kubens"
+    alias kctx "kubectx"
+    alias kns "kubens"
+    alias kgp "kubectl get pods"
+    alias kgd "kubectl get deploy"
+    alias kgs "kubectl get svc"
+    alias klog "kubectl logs -f"
+    alias kexec "kubectl exec -it"
+    alias kaf "kubectl apply -f"
+    alias kdf "kubectl delete -f"
+
+    # ── Docker ──
+    alias dc "docker compose"
+
+    # ── Tools ──
+    alias lg "lazygit"
 
     # kubectl 자동완성
     kubectl completion fish | source 2>/dev/null

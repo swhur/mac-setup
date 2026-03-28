@@ -144,18 +144,12 @@ cask "zed"
 cask "docker"        # Docker Desktop
 cask "raycast"
 cask "google-chrome"
-cask "firefox"
-cask "iterm2"
 cask "slack"
 cask "notion"
-cask "obsidian"
-cask "rectangle"     # 윈도우 매니저
-cask "stats"         # 시스템 모니터링
 
 # ── Fonts ──
 cask "font-hack-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
-cask "font-fira-code-nerd-font"
 BREWFILE_CONTENT
 
 info "Brewfile로 설치 시작 (시간이 좀 걸립니다)..."

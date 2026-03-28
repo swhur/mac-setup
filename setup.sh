@@ -127,8 +127,7 @@ brew "argocd"
 brew "kubeseal"
 brew "kubelogin"
 
-# ── Container & Infra ──
-brew "docker-compose"
+# ── Infra ──
 brew "terraform"
 brew "ansible"
 

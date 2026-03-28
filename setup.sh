@@ -69,9 +69,6 @@ section "Homebrew 패키지 설치 (Brewfile)"
 
 BREWFILE=$(mktemp)
 cat > "$BREWFILE" << 'BREWFILE_CONTENT'
-# ── Taps ──
-tap "homebrew/cask-fonts"
-
 # ── Terminal & Shell ──
 brew "fish"
 brew "tmux"
@@ -138,11 +135,11 @@ brew "ansible"
 # ── Network & Debug ──
 brew "nmap"
 brew "mtr"
-brew "dog"           # DNS lookup
+brew "doggo"         # DNS lookup
 
 # ── Cask: Apps ──
 cask "ghostty"
-cask "visual-studio-code"
+cask "antigravity"
 cask "zed"
 cask "docker"        # Docker Desktop
 cask "raycast"
@@ -152,7 +149,6 @@ cask "iterm2"
 cask "slack"
 cask "notion"
 cask "obsidian"
-cask "kakaotalk"
 cask "rectangle"     # 윈도우 매니저
 cask "stats"         # 시스템 모니터링
 
@@ -611,7 +607,7 @@ echo -e "  5. tmux에서 ${CYAN}prefix + I${NC} 로 TPM 플러그인 설치"
 echo ""
 echo -e "  ${YELLOW}설치된 항목:${NC}"
 echo -e "  • Shell: Fish + Starship + Fisher"
-echo -e "  • Editor: Neovim (LazyVim) + Zed + VS Code"
+echo -e "  • Editor: Neovim (LazyVim) + Zed + Antigravity"
 echo -e "  • Terminal: Ghostty + tmux"
 echo -e "  • Languages: Python (uv) + Go + Rust + Node.js (fnm)"
 echo -e "  • K8s: kubectl, helm, k9s, kustomize, kubectx, stern, k3d, argocd"
